@@ -1,0 +1,16 @@
+if(s1==s2) is true
+    then s1.equals(s2) is always true
+
+
+
+if(s1==s2) is false
+    then s1.equals(s2) is may be true or false
+
+
+if s1.equals(s2) is true
+       (s1==s2) is may be true or false
+
+
+
+if s1.equals(s2) is false
+       (s1==s2) is always false
