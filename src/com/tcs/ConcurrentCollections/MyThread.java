@@ -1,10 +1,11 @@
 package com.tcs.ConcurrentCollections;
 
-import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class MyThread extends Thread {
-    private static ArrayList<String> list = new ArrayList<>();
+    //    private static ArrayList<String> list = new ArrayList<>();
+    private static CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<>();
 
     public static void main(String[] args) throws InterruptedException {
         list.add("A");
@@ -24,6 +25,7 @@ public class MyThread extends Thread {
     public void run() {
         try {
             Thread.sleep(1000);
+            System.out.println("In run method");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
