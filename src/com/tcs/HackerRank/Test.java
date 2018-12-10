@@ -1,3 +1,4 @@
+/*
 package com.tcs.HackerRank;
 
 import java.util.Scanner;
@@ -33,3 +34,4 @@ class Test {
     }
   }
 }
+*/
