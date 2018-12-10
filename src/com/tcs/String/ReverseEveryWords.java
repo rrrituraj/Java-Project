@@ -1,7 +1,5 @@
 package com.tcs.String;
 
-import java.util.Arrays;
-
 public class ReverseEveryWords {
   public static void main(String[] args) {
     String sen =
@@ -11,17 +9,19 @@ public class ReverseEveryWords {
 
   private static String reversedWords(String sen) {
     String[] splitArr = sen.split(" ");
+    String reverse = "";
     for (int i = 0; i < splitArr.length; i++) {
       splitArr[i] = reverse(splitArr[i]);
+      reverse = reverse + " " + splitArr[i];
     }
-    return Arrays.toString(splitArr);
+    return reverse;
   }
 
   private static String reverse(String s) {
-    StringBuilder reverse = null;
-    for (int i = s.length() - 1; i > 0; i--) {
-      reverse = reverse.append(s.charAt(i));
+    String reverse = "";
+    for (int i = s.length() - 1; i > 0; --i) {
+      reverse = reverse + s.charAt(i);
     }
-    return String.valueOf(reverse);
+    return reverse;
   }
 }
