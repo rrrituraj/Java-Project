@@ -1,4 +1,4 @@
-package com.tcs.Java8.methodReference;
+package com.tcs.Java8.reference.method;
 
 public class TestThread {
 
